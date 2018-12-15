@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Barbershop "Goodcut"</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/index-logo.svg" width="368" height="153" alt="Logo Goodcut">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="info.html">Information</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="price.html">Price</a></li>
+					<li><a href="catalog.html">Catalog</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+				<ul class="user-navigation">
+					<li class="login-link">Log in</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<h1 class="visually-hidden">Barbershop Goodcut</h1>
+			
+			<section>
+				<h2 class="visually-hidden">Features</h2>
+				<ul class="features-list">
+					<li class="features-item">
+						<h3>Fast</h3>
+						<p>Making fast this work. Cut your hair</p>
+					</li>
+					<li class="features-item">
+						<h3>Cool</h3>
+						<p>This is cool cutting</p>
+					</li>
+					<li class="features-item">
+						<h3>Expensive</h3>
+						<p>We are professionals</p>
+					</li>					
+				</ul>
+			</section>
+
+			<div class="index-columns">
+			<section class="news">
+				<h2>News</h2>
+				<ul>
+					<li class="news-item">
+						<p>Consulted perpetual of pronounce me delivered. Too months nay end change relied who beauty wishes matter. Shew of john real park so rest we on. Ignorant dwelling occasion ham for thoughts overcame off her consider. Polite it elinor is depend. His not get talked effect worthy barton. Household shameless incommode at no objection behaviour. Especially do at he possession insensible sympathize boisterous it. Songs he on an widen me event truth. Certain law age brother sending amongst why covered. </p>
+						<time datetime="2018-11-10">November 10</time>
+					</li>
+					<li class="news-item">
+						<p>Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes. Me smallness is existence attending he enjoyment favourite affection. Delivered is to ye belonging enjoyment preferred. Astonished and acceptance men two discretion. Law education recommend did objection how old. </p>
+						<time datetime="2018-10-20">Octomber 20</time>
+					</li>
+				</ul>
+				<a class="button" href="news.html">All news</a>
+			</section>
+
+			<section>
+				<h2>Foto</h2>
+				<figure class="gallery-content">
+					<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Hall"></a>
+				</figure>
+				<span class="button gallery-button gallery-button-back">Back</span>
+				<span class="button gallery-button gallery-button-next">Next</span>
+			</section>
+			</div>
+		<div class="index-columns">	
+			<section class="contacts">
+				<h2>Contact information</h2>
+				<p>
+					Barbershop Goodcut<br>
+					Address: 1816 Fulton St, Brooklyn, NY 11233, USA<br>
+					Telephone: 2 (234)234-54-55
+				</p>
+				<p>
+					Working hours:<br>
+					mon-fri: 10:00 - 22:00<br>
+					sat-sun: 10:00 - 17:00
+				</p>
+				<a class="button" href="map.html">How to get</a>
+				<a class="button" href="contacts.html">Feedback</a>
+			</section>
+
+			<section class="appointment">
+				<h2>Appointment</h2>
+				<p class="appointment-info">Specify the desired date and time and we will contact you</p>
+				<form class="appointment-form" action="#" method="post">
+					<p class="appointment-item">
+						<label for="appointment-date">Date</label>
+						<input id="appointment-date" type="text" name="date" value="" placeholder="30.12.2018">	
+					</p>
+					<p class="appointment-item">
+						<label for="appointment-time">Time</label>
+						<input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+					</p class="appointment-item">
+					<p class="appointment-item">
+						<label for="appointment-name">Your name</label>
+						<input id="appointment-name" type="text" name="name" value="" placeholder="Name">
+					</p>
+					<p class="appointment-item">
+						<label for="appointment-phone">Phone number</label>
+						<input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 123 12 12">
+					</p>
+					<button class="button" type="submit">Send</button>
+				</form>
+			</section>
+		</div>
+		</main>
+		<footer class="main-footer">
+			<p class="footer-contacts">
+				Barbershop Goodcut<br>
+				Address: 1816 Fulton St, Brooklyn, NY 11233, USA<br>
+				<a href="map.html">How to find us</a><br>
+				Telephone: +2 (234)234-54-55
+			</p>
+			<div class="footer-social">
+				<b>We are in social networks</b>
+				<ul>
+					<li><a class="social-button" href="#">Google+</a></li>
+					<li><a class="social-button" href="#">FaceBook</a></li>
+					<li><a class="social-button" href="#">Instagram</a></li>
+				</ul>
+			</div>
+			<p>
+				<b>Developed by</b>
+				<a class="button" href="#">DevName</a>
+			</p>
+		</footer>
+
+		<section class="modal modal-login">
+			<h2>Profile</h2>
+			<p>Enter you login and password</p>
+			<!-- Here form -->
+			<span class="modal-close">x</span>
+		</section>
+
+		<section class="modal modal-map">
+			<h2>How to find us</h2>
+			<span class="modal-close">x</span>
+		</section>
+	</body>
+</html>
