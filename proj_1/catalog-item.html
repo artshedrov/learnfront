@@ -89,8 +89,26 @@
 		<section class="modal modal-login">
 			<h2>Profile</h2>
 			<p>Enter you login and password</p>
-			<!-- Here form -->
-			<span class="modal-close">x</span>
+			<form class="login-form" action="#" method="post">
+				<p>
+					<label class="visually-hidden" for="user-login"></label>
+					<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Login">
+				</p>
+				<p>
+					<label class="visually-hidden" for="user-password"></label>
+					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
+				</p>
+				<p class="login-password-info">
+					<label>
+						<input type="checkbox" name="remember" class="visually-hidden">
+						<span class="checkbox-indicator"></span>
+						Remember me
+					</label>
+					<a class="restore" href="#">I did forgot password</a>
+				</p>
+				<button class="button" type="submit">Login</button>
+			</form>
+			<button class="modal-close" type="button">Close</button>
 		</section>
 
 		<section class="modal modal-map">

@@ -20,7 +20,9 @@
 					<li><a href="contacts.html">Contacts</a></li>
 				</ul>
 				<ul class="user-navigation">
-					<li class="login-link">Log in</li>
+					<li class="login-link">
+						<a class="login-link" href="login.html">Log in</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -66,8 +68,8 @@
 				<figure class="gallery-content">
 					<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Hall"></a>
 				</figure>
-				<span class="button gallery-button gallery-button-back">Back</span>
-				<span class="button gallery-button gallery-button-next">Next</span>
+				<button class="button gallery-button gallery-button-back">Back</button>
+				<button class="button gallery-button gallery-button-next">Next</button>
 			</section>
 			</div>
 		<div class="index-columns">	
@@ -98,7 +100,7 @@
 					<p class="appointment-item">
 						<label for="appointment-time">Time</label>
 						<input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
-					</p class="appointment-item">
+					</p>
 					<p class="appointment-item">
 						<label for="appointment-name">Your name</label>
 						<input id="appointment-name" type="text" name="name" value="" placeholder="Name">
@@ -136,13 +138,34 @@
 		<section class="modal modal-login">
 			<h2>Profile</h2>
 			<p>Enter you login and password</p>
-			<!-- Here form -->
-			<span class="modal-close">x</span>
+			<form class="login-form" action="#" method="post">
+				<p>
+					<label class="visually-hidden" for="user-login"></label>
+					<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Login">
+				</p>
+				<p>
+					<label class="visually-hidden" for="user-password"></label>
+					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
+				</p>
+				<p class="login-password-info">
+					<label>
+						<input type="checkbox" name="remember" class="visually-hidden">
+						<span class="checkbox-indicator"></span>
+						Remember me
+					</label>
+					<a class="restore" href="#">I did forgot password</a>
+				</p>
+				<button class="button" type="submit">Login</button>
+			</form>
+			<button class="modal-close" type="button">Close</button>
 		</section>
 
 		<section class="modal modal-map">
-			<h2>How to find us</h2>
-			<span class="modal-close">x</span>
+			<h2 class="visually-hidden">How to find us</h2>
+			<p>
+				<img src="img/map.jpg" width="780" height="560" alt="Our address this">
+			</p>
+			<button class="modal-close" type="button">Close</button>
 		</section>
 	</body>
 </html>

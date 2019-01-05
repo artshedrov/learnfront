@@ -34,92 +34,123 @@
 			</ul>
 			<section class="filters">
 				<h2 class="visually-hidden">Filter</h2>
-				<!-- Here form -->
+				<form class="filter" method="get" action="#">
+					<fieldset>
+						<legend>Manufacturer</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+								<label for="filter-baxter-of-california">Baxter of California</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="mr-natty" id="filter-mr-natty" checked>
+								<label for="filter-mr-natty">Mr Natty</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="suavecito" id="filter-suavetico" checked>
+								<label for="filter-suavetico">Suavecito</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input-checkbox" type="checkbox" name="american-crew" id="filter-american-crew" checked>
+								<label for="filter-american-crew">American Crew</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Product group</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="filter-shave" checked>
+								<label for="filter-shave">Shaving accessories</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="filter-care">
+								<label for="filter-care">Care products</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" id="filter-accessories">
+								<label for="filter-accessories">Accessories</label>
+							</li>
+						</ul>
+
+					</fieldset>
+					<button type="submit" class="filter-button button">Show</button>
+				</form>
 			</section>
 
 			<section class="catalog">
 				<h2 class="visually-hidden">List of care products</h2>
 				<ul class="catalog-list">
 					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">
-								<span class="catalog-category">Travel kit</span> 
+						<a href="catalog-item.html">
+							<h3>
+								<span class="catalog-category">Travel kit</span>
 								<span class="catalog-item-title">"Baxter"</span>
-							</a>
-						</h3>
-						<p class="catalog-item-image">
-							<a href="catalog-item.html">
+							</h3>
+							<p class="catalog-item-image">
 								<img src="img/product-1.png" width="220" height="165" alt="Travel kit Baxter">
-							</a>
-						</p>
+							</p>
+						</a>
 						<p class="catalog-item-price">
 							<b>30 $</b>
 							<a class="button" href="#">Buy</a>
 						</p>	
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">
-								<span class="catalog-category">Conditioner</span> 
+						<a href="catalog-item.html">
+							<h3>
+								<span class="catalog-category">Conditioner</span>
 								<span class="catalog-item-title">"Air"</span>
-							</a>
-						</h3>
-						<p class="catalog-item-image">
-							<a href="catalog-item.html">
+							</h3>
+							<p class="catalog-item-image">
 								<img src="img/product-2.png" width="220" height="165" alt="Conditioner Air">
-							</a>
-						</p>
+							</p>
+						</a>
 						<p class="catalog-item-price">
 							<b>5 $</b>
 							<a class="button" href="#">Buy</a>
 						</p>	
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">
-								<span class="catalog-category">Hair gel</span> 
+						<a href="catalog-item.html">
+							<h3>
+								<span class="catalog-category">Hair gel</span>
 								<span class="catalog-item-title">"Super"</span>
-							</a>
-						</h3>
-						<p class="catalog-item-image">
-							<a href="catalog-item.html">
+							</h3>
+							<p class="catalog-item-image">
 								<img src="img/product-3.png" width="220" height="165" alt="Hair gel Super">
-							</a>
-						</p>
+							</p>
+						</a>
 						<p class="catalog-item-price">
 							<b>10 $</b>
 							<a class="button" href="#">Buy</a>
 						</p>	
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">
-								<span class="catalog-category">Shampoo</span> 
+						<a href="catalog-item.html">
+							<h3>
+								<span class="catalog-category">Shampoo</span>
 								<span class="catalog-item-title">"American crew"</span>
-							</a>
-						</h3>
-						<p class="catalog-item-image">
-							<a href="catalog-item.html">
+							</h3>
+							<p class="catalog-item-image">
 								<img src="img/product-4.png" width="220" height="165" alt="Shampoo American crew">
-							</a>
-						</p>
+							</p>
+						</a>
 						<p class="catalog-item-price">
 							<b>25 $</b>
 							<a class="button" href="#">Buy</a>
 						</p>	
 					</li>
 					<li class="catalog-item">
-						<h3>
-							<a href="catalog-item.html">
-								<span class="catalog-category">Hair gel</span> 
+						<a href="catalog-item.html">
+							<h3>
+								<span class="catalog-category">Hair gel</span>
 								<span class="catalog-item-title">"American crew"</span>
-							</a>
-						</h3>
-						<p class="catalog-item-image">
-							<a href="catalog-item.html">
+							</h3>
+							<p class="catalog-item-image">
 								<img src="img/product-5.png" width="220" height="165" alt="Hair gel American crew">
-							</a>
-						</p>
+							</p>
+						</a>
 						<p class="catalog-item-price">
 							<b>15 $</b>
 							<a class="button" href="#">Buy</a>
@@ -158,8 +189,26 @@
 		<section class="modal modal-login">
 			<h2>Profile</h2>
 			<p>Enter you login and password</p>
-			<!-- Here form -->
-			<span class="modal-close">x</span>
+			<form class="login-form" action="#" method="post">
+				<p>
+					<label class="visually-hidden" for="user-login"></label>
+					<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Login">
+				</p>
+				<p>
+					<label class="visually-hidden" for="user-password"></label>
+					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Password">
+				</p>
+				<p class="login-password-info">
+					<label>
+						<input type="checkbox" name="remember" class="visually-hidden">
+						<span class="checkbox-indicator"></span>
+						Remember me
+					</label>
+					<a class="restore" href="#">I did forgot password</a>
+				</p>
+				<button class="button" type="submit">Login</button>
+			</form>
+			<button class="modal-close" type="button">Close</button>
 		</section>
 	</body>
 </html>
