@@ -13,18 +13,22 @@
 				<a class="main-header-logo">
 					<img src="img/index-logo.svg" width="368" height="153" alt="Logo Goodcut">
 				</a>
-				<ul class="site-navigation">
-					<li><a href="info.html">Information</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="price.html">Price</a></li>
-					<li><a href="catalog.html">Catalog</a></li>
-					<li><a href="contacts.html">Contacts</a></li>
-				</ul>
-				<ul class="user-navigation">
-					<li class="login-link">
-						<a class="login-link" href="login.html">Log in</a>
-					</li>
-				</ul>
+				<div class="main-navigation-wrapper">
+					<div class="container">
+						<ul class="site-navigation">
+							<li><a href="info.html">Information</a></li>
+							<li><a href="news.html">News</a></li>
+							<li><a href="price.html">Price</a></li>
+							<li><a href="catalog.html">Catalog</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+						</ul>
+						<ul class="user-navigation">
+							<li class="login-link">
+								<a class="login-link" href="login.html">Log in</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</nav>
 		</header>
 		<main class="container">
@@ -67,13 +71,13 @@
 			<section class="gallery">
 				<h2>Foto</h2>
 				<figure class="gallery-content">
-					<a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Hall"></a>
+					<a href="#"><img src="img/studio.jpg" width="286" height="200" alt="Hall"></a>
 				</figure>
 				<button class="button gallery-button gallery-button-back">Back</button>
 				<button class="button gallery-button gallery-button-next">Next</button>
 			</section>
 			</div>
-		<div class="index-columns">	
+		<div class="index-columns">
 			<section class="contacts">
 				<h2>Contact information</h2>
 				<p>
@@ -96,7 +100,7 @@
 				<form class="appointment-form" action="#" method="post">
 					<p class="appointment-item">
 						<label for="appointment-date">Date</label>
-						<input id="appointment-date" type="text" name="date" value="" placeholder="30.12.2018">	
+						<input id="appointment-date" type="text" name="date" value="" placeholder="30.12.2018">
 					</p>
 					<p class="appointment-item">
 						<label for="appointment-time">Time</label>
@@ -116,24 +120,26 @@
 		</div>
 		</main>
 		<footer class="main-footer">
-			<p class="footer-contacts">
-				Barbershop Goodcut<br>
-				Address: 1816 Fulton St, Brooklyn, NY 11233, USA<br>
-				<a href="map.html">How to find us</a><br>
-				Telephone: +2 (234)234-54-55
-			</p>
-			<div class="footer-social">
-				<b>We are in social networks</b>
-				<ul>
-					<li><a class="social-button" href="#">Google+</a></li>
-					<li><a class="social-button" href="#">FaceBook</a></li>
-					<li><a class="social-button" href="#">Instagram</a></li>
-				</ul>
+			<div class="container">
+				<p class="footer-contacts">
+					Barbershop Goodcut<br>
+					Address: 1816 Fulton St, Brooklyn, NY 11233, USA<br>
+					<a href="map.html">How to find us</a><br>
+					Telephone: +2 (234)234-54-55
+				</p>
+				<div class="footer-social">
+					<b>We are in social networks</b>
+					<ul>
+						<li><a class="social-button" href="#">Google+</a></li>
+						<li><a class="social-button" href="#">FaceBook</a></li>
+						<li><a class="social-button" href="#">Instagram</a></li>
+					</ul>
+				</div>
+				<p class="footer-copyright">
+					<b>Developed by</b>
+					<a class="button" href="#">DevName</a>
+				</p>
 			</div>
-			<p class="footer-copyright">
-				<b>Developed by</b>
-				<a class="button" href="#">DevName</a>
-			</p>
 		</footer>
 
 		<section class="modal modal-login">
