@@ -153,6 +153,9 @@ a {
 }
 
 .button {
+	display: inline-block;
+	margin-right: 16px;
+	padding: 10px 30px;
 	font: inherit;
 
 	text-align: center;
@@ -168,6 +171,13 @@ a {
 .button:focus,
 .button:active {
 	background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled {
+	cursor: default;
+	opacity: 0.5;
+	background-color: #000000;
 }
 
 .site-navigation,
@@ -210,11 +220,31 @@ a {
 
 .features-item {
 	width: 300px;
+	text-align: center;
+}
+
+.features-item h3::after {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -10px;
+	transform: rotate(45deg);
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
 }
 
 .features-item h3 {
+	position: relative;
+	margin: 0;
+	margin-bottom: 60px;
 	font-size: 30px;
 	line-height: 42px;
+}
+
+.features-item p {
+	margin: 0 10px;
 }
 
 .index-columns {
@@ -225,12 +255,17 @@ a {
 	color: #000000;
 
 	background-color: #f8f5f2;
-	background-image: url(../img/pattern-light.jpg);
-	background-position: 0 0;
-	background-repeat: repeat;
+	background-image:
+			url(../img/line.png),
+			url(../img/pattern-light.jpg);
+	background-position: center, 0 0;
+	background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
+	margin: 0;
+	margin-bottom: 25px;
+
 	font-size: 30px;
 	line-height: 42px;
 }
@@ -241,7 +276,18 @@ a {
 }
 
 .news-list {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
 	list-style: none;
+}
+
+.news-item {
+	margin-bottom: 25px;
+}
+
+.news-item p {
+	margin: 0;
 }
 
 .news-item time {
@@ -250,23 +296,87 @@ a {
 
 .gallery {
 	width: 300px;
-	min-height: 315px;
+}
+
+.gallery-container {
+	position: relative;
+	height: 260px;
 }
 
 .gallery-content {
+	height: 164px;
+	margin: 0;
 	background-color: #cccccc;
 	border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+	width: 286px;
+	height: 164px;
+}
+
+.gallery-button {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0;
+
+
+	width: 140px;
+	margin: 0;
+}
+
+.gallery-button-back {
+	left: 0;
+}
+
+.gallery-button-next {
+	right: 0;
 }
 
 .contacts {
 	width: 380px;
 }
 
+.contacts p {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
 .appointment {
 	width: 300px;
 }
 
+.appointment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.appointment-item {
+	width: 140px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.appointment-item label {
+	display: block;
+	margin-bottom: 9px;
+	margin-left: 15px;
+}
+
+.appointment-info {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
 .appointment-item input {
+	box-sizing: border-box;
+	width: 140px;
+	padding-top: 8px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 7px;
+
 	font: inherit;
 
 	background-color: transparent;
@@ -275,6 +385,13 @@ a {
 
 .appointment-item input:focus {
 	border-color: #663d15;
+}
+
+.appointment button {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-right: 0;
 }
 
 .page-title {
@@ -501,10 +618,38 @@ a {
 }
 
 .footer-social ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 141px;
+	margin: 0 auto;
+	padding: 0;
+
 	list-style: none;
 }
+
+.footer-social b {
+	display: block;
+	margin-bottom: 15px;
+}
+
 .social-button {
-	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 43px;
+	height: 43px;
+
+}
+
+.social-button:hover,
+.social-button:focus {
+	background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+	fill: #000000;
 }
 
 .footer-copyright {
@@ -512,6 +657,16 @@ a {
 	margin: 0;
 	text-align: center;
 	margin-left: auto;
+}
+
+.footer-copyright .button {
+	display: block;
+	margin-right: 0;
+}
+
+.footer-copyright b {
+	display: block;
+	margin-bottom: 15px;
 }
 
 .footer-copyright .button:hover,
